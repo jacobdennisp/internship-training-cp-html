@@ -10,53 +10,116 @@ Open Tag - Opening Tag
 -->
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="author"  content="Dennis">
-        <meta name="keywords" content="html,Basics of WebApp">
-        <meta name="description" content="My Website for Learning">
-        <title>My First Website | Campuspe </title>
-        <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JayanthC6"> <meta name="keywords" content="HTML5, MCA, Web Development, Campuspe">
+    <meta name="description" content="My Professional Portfolio for Internship">
+    <title>Jayanth's Portfolio | Campuspe Internship</title>
+    
+    <style>
+        /* Basic CSS to make the table look professional */
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        header, footer { background-color: #333; color: white; padding: 10px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+    </style>
+</head>
+<body>
 
-        </style>
-        <link>
-    </head>
-    <body>
-        
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>
+    <header>
+        <h1>Jayanth's Developer Portfolio</h1>
+        <nav>
+            <a href="#basics">Basics</a>
+            <a href="#academics">Academics</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
 
-        <p>My <b>Assignment</b> was submitted <i><s>late</s></i></p>
+    <main>
+        <section id="basics">
+            <h2>HTML Basics (Headings & Formatting)</h2>
+            <h3>Standard Headings</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
 
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+            <p>My <b>Assignment</b> was submitted <i><s>late</s></i> on time!</p> <h3>My Task Lists</h3>
+            <ul>
+                <li>Learn HTML5 Semantics</li>
+                <li>Practice Git Forking</li>
+                <li>Understand Pull Requests</li>
+            </ul>
 
-        <ol>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ol>
+            <ol>
+                <li>Step 1: Clone Repo</li>
+                <li>Step 2: Edit Code</li>
+                <li>Step 3: Push Changes</li>
+            </ol>
 
-        <ol>
-            <li>Parent 1
-                <ol>
-                    <li>Child 1</li>
-                    <li>Child 2</li>
-                </ol>
-                
-            </li>
+            <p><strong>Project Modules:</strong></p>
+            <ol>
+                <li>Frontend
+                    <ol>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                    </ol>
+                </li>
+                <li>Backend (Java/Python)</li>
+            </ol>
+        </section>
 
-        </ol>
-        
+        <hr>
 
-        <script></script>
-    </body>
+        <section id="academics">
+            <h2>Academic Performance</h2>
+            <p>Demonstrating data representation using tables.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Semester</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sem 1</td>
+                        <td>Data Structures</td>
+                        <td>A+</td>
+                        <td>Passed</td>
+                    </tr>
+                    <tr>
+                        <td>Sem 2</td>
+                        <td>Web Technologies</td>
+                        <td>O</td>
+                        <td>Passed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <h2>Project Details</h2>
+            <details>
+                <summary><strong>Click to view "Library Management System" details</strong></summary>
+                <p>This project was built using Java and MySQL. It features:</p>
+                <ul>
+                    <li>User Authentication</li>
+                    <li>Book Issue/Return Tracking</li>
+                    <li>Fine Calculation Logic</li>
+                </ul>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 JayanthC6. Built for Campuspe Internship.</p>
+    </footer>
+
+</body>
 </html>
