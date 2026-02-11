@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head><title>form</title></head>
+    <body ><center>
+        <h1>Registration Form</h1>
+        <img src="https://media.licdn.com/dms/image/v2/D560BAQFvSqEUqe3fjw/company-logo_200_200/B56ZZW7FqNGcAI-/0/1745215053888/edufu_technologies_private_limited_logo?e=1772668800&v=beta&t=r1TO0x0TfKajByce1jsLodrw4nD6pEaTNQ14fEzLTV4" alt="">
+        <form style="align-items:flex-start;">
+            <label for ="First Name">First Name</label>
+            <input type ="text" id="First Name" required placeholder="Enter your  First Name"><br><br>
+            <label for ="Last Name">Last Name</label>
+            <input type ="text" id="Last Name" required placeholder="Enter your Last Name"><br><br>
+            <label for="Gmail ID">Gmail ID</label>
+            <input type="email" id="Gmail ID" required placeholder="Enter your Gmail ID"><br><br>
+            <label for ="DOB">DOB</label>
+            <input type ="date" id="DOB" required><br><br>
+            <label for ="Internship">Internship Course</label>
+            <select id="Internship" required>
+            <option value="Java Full Stack">Java Full Stack</option>
+            <option value="Cyber Security">Cyber Security</option>
+            <option value="Python Full Stack">Python Full Stack</option>
+            </select><br><br>
+            <label for="Terms">Terms and Condition</label>
+            <input type="checkbox" required><br><br>
+            <input type="submit">
+            <br>
+            <br>
+            <br>
+            <a href="Login.html">Already Have an Account?</a>
+        </form>
+</center>
+    </body>
+</html>
