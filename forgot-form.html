@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forgot Password</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Forgot Password</h2>
+
+    <p>
+        Please enter your registered email address.</p><p> 
+        A password reset link will be sent to your email.
+    </p>
+
+    <form>
+         <label for="email"><b>Email Address</b></label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <input type="submit" value="Send Reset Link">
+    </form>
+</div>
+
+</body>
+</html>
