@@ -1,0 +1,6 @@
+<form>
+<label>Email:</label><br>
+<input type="text"><br><br>
+
+<input type="submit" value="Submit">
+</form>
