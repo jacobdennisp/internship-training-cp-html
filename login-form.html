@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body { 
+    font-family: Arial; 
+    background:#f4f6f8; }
+.form-card {
+  width: 350px; 
+  margin: 90px auto; 
+  padding: 25px;
+  background:white; 
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+input { 
+    width:100%; 
+    padding:10px;
+    margin:8px 0 16px;
+    border:1px solid #ccc; 
+    border-radius:4px; }
+button {
+  width:100%; 
+  padding:10px;
+  background:#16a34a; 
+  color:white;
+  border:none; 
+  border-radius:4px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-card">
+<h2>Login</h2>
+
+<form method="post">
+
+<label>Username</label>
+<input type="text" name="username" required>
+
+<label>Password</label>
+<input type="password" name="password" required>
+
+<button type="submit">Login</button>
+<p style="text-align:center; margin-top:15px;">
+  <a href="forgot-form.html">Forgot Password?</a>
+</p>
+
+</form>
+</div>
+
+</body>
+</html>
