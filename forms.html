@@ -1,0 +1,84 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ruchitha">
+        <meta name="keywords" content="html,basics of webapp">
+        <meta name="description" content="HTML document for learning web development basics.">
+
+
+        <title>Learning html</title>
+    </head>
+    <body>
+        <center>
+            <form method="post" enctype="multipart/form-data">
+            
+            <!-- This is for input type text -->
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" value="Ruchi"><br><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="myEmail" placeholder="Enter your Email"><br><br>
+
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" name="phone" placeholder="Enter your phone number"><br><br>
+
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="Enter your Desired password"><br><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Confirm your password"><br><br>
+
+            Choose Your Gender:
+            Male <input type="radio" name="gender" value="Male">
+            Female <input type="radio" name="gender" value="Female"><br><br>
+
+            Enter your hobbies:
+            Dancing <input type="checkbox" name="hobbies" value="Dancing">
+            Reading Books <input type="checkbox" name="hobbies" value="Reading Books"><br><br>
+
+            <label for="courseID">Select your Course:</label>
+            <select id="courseID" name="courses">
+
+                <optgroup label="Sciences">
+                    <option value="Btech">Btech</option>
+                    <option value="Bsc">Bsc</option>
+                    <option value="Bca">Bca</option>
+                </optgroup>
+
+                <optgroup label="Commerce">
+                    <option value="BCom">BCom</option>
+                </optgroup>
+
+                <optgroup label="Humanities">
+                    <option value="BA">BA</option>
+                    <option value="BVoc">BVoc</option>
+                </optgroup>
+
+            </select><br><br>
+            <label for="subjectsId">Subjects</label>
+            <select id="subjectId" anme="subjects" multiple>
+                <option>Software Engg</option>
+                <option>Maths</option>
+                <option>DBMS</option>
+                <option>Data Structures</option>
+                <option>Data Analytics</option>
+            </select><br><br>
+
+             <label Id="theme"></label>
+             <input type="color" Id="theme" name="theme"><br><br>
+
+             <label for="dobId"> Date of birth</label>
+             <input type="date" id="dobId" name="dob">
+             <br><br>
+
+             <input type="reset" id="Reset">
+
+            <!--<input type="submit" value="Submit">-->
+            <button type="button" id="submitBtn">submit</button>      
+        
+        </form>
+    </center>
+
+    </body>
+</html>
