@@ -1,0 +1,53 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ruchitha">
+        <meta name="keywords" content="html,basics of webapp">
+        <meta name="description" content="HTML document for learning web development basics.">
+
+
+        <title>HTML APIs | Geolocation API</title>
+    </head>
+    <body>
+        <h1>Geolocation API Example</h1>
+        <button onclick="getLocation()">Get My Location</button>
+        <p><b>Latitude</b>: <span id="latitude"></span></p>
+        <p><b>Longitude</b>: <span id="longitude"></span></p>
+        <p><b>Accuracy</b>: <span id="accuracy"></span></p>
+
+        <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            document.getElementById("latitude").innerHTML = position.coords.latitude;
+            document.getElementById("longitude").innerHTML = position.coords.longitude;
+            document.getElementById("accuracy").innerHTML = position.coords.accuracy.toFixed(2);
+        }
+
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+    </script>
+        
+    </body>
+</html>
