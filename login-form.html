@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stylish Login</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    width: 330px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37,117,252,0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1a5ed9;
+    box-shadow: 0 0 10px rgba(37,117,252,0.7);
+}
+
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2575fc;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+<h2>Welcome Back</h2>
+
+<form>
+<div class="input-group">
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+</div>
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" placeholder="Enter your password" required>
+</div>
+
+<button type="submit">Login</button>
+
+<div class="links">
+<a href="forgot-form.html">Forgot Password?</a>
+</div>
+</form>
+
+</div>
+
+</body>
+</html>
