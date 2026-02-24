@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+.form-card {
+  width: 350px;
+  margin: 80px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+h2 {
+  text-align: center;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+}
+button:hover {
+  background: #1e4fd8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-card">
+<h2>Register Form</h2>
+
+<form method="post">
+
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Email</label>
+<input type="text" name="email" required>
+
+<label>Password</label>
+<input type="password" name="password" required>
+
+<button type="submit">Create Account</button>
+<p style="text-align:center; margin-top:15px;">
+  Already have an account?
+  <a href="login-form.html">Login here</a>
+</p>
+
+</form>
+</div>
+
+</body>
+</html>
