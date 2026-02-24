@@ -1,0 +1,22 @@
+
+
+
+@
+branch 1 ---------index.html,abcd.html
+    |
+    |----branch 2---------index.html,abcd.html,something.html
+    |       |
+    |       |---------branch 2---------index.html,abcd.html,something.html,something.html
+    |
+    |----branch 3---------index.html,abcd.html,thatthing.html    
+
+main ----- Assignment.txt,basics.html,index.html
+|
+|------html-forms ----- Assignment.txt,basics.html,index.html,git-visualisatgion.txt,forms.htmlalri
+
+
+
+Vaishnavi --- html-forms   ----- index.html <header>  -------- push ----|          |
+                                                                                   |
+Dennis ----- html-forms   ------ index.html <footer>  --------------pull|-------push
+    |

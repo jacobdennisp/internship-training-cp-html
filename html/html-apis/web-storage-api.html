@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>HTML APIs | Web Storage API | Campuspe </title>
+        
+    </head>
+    <body>
+        <h1>Web Storage API</h1>
+
+        
+        <h3>Save Data</h3>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="saveData()">Save to LocalStorage</button>
+        <button onclick="saveSession()">Save to SessionStorage</button>
+
+        <h3>Stored Data</h3>
+        <p>LocalStorage: <span id="localData">None</span></p>
+        <p>SessionStorage: <span id="sessionData">None</span></p>
+
+
+        <button onclick="clearData()">Clear All</button>
+        <script>
+            window.onload=function(){
+                document.getElementById('localData').textContent = localStorage.getItem('name') || 'None';                
+                document.getElementById('sessionData').textContent = sessionStorage.getItem('name') || 'None';
+            }
+
+            function saveData(){
+                let name = document.getElementById('nameInput').value;
+                localStorage.setItem('name',name)
+                document.getElementById('localData').textContent = name;
+                alert('Data saved to Local Storage')
+            }
+
+            function saveSession(){
+                let name = document.getElementById('nameInput').value;
+                sessionStorage.setItem('name',name)
+                document.getElementById('sessionData').textContent = name;
+                alert('Data saved to session Storage')
+            }
+
+            function clearData(){
+                localStorage.clear();
+                sessionStorage.clear();
+                document.getElementById('localData').textContent='None';
+                document.getElementById('sessionData').textContent='None';
+                document.getElementById('nameInput').value='';
+                alert('Alert all Storage Cleared')
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+Create a New Public Git Hub Repository
+
+Do the below aligned task
+
+1. Login Page -> Username, Password and Login Button (Redirect to Dashbaord Page), Forgot password Link(Redirect to Forgot password Page), Create a new Account Link(Redirect to Register Page)
+2. Registration Page -> Name, Email Id, Phone Number, Password, Confirm Password and Register Button(Redirect to Login Page). I already have an account Link(Redirect to Login Page)
+3. Forgot Password Page -> email and send password reset Link button(Redirect to Login)
+4. Reset Password Page -> Enter the New Password , Confirm the password and update password button. when i click on the update password button i should be redirected to Login Page
+5. Dashboard Page ->  Welcome to My Dashbaord, Add another button for Logout(When I click on the Logout button I should be redirected to Login Page)
+
+Push ur changes to the new Github Repository
+
+Upload the Repository Link to the LMS

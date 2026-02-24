@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>Learn HTML | Campuspe </title>
+        
+    </head>
+    <body>
+        <center>
+            <h3>Register to Campuspe</h3>
+            <form method="post" enctype="multipart/form-data">
+                <!-- This is for input type text-->
+                <!--
+                    myVariableName -> Camel Case -> js,c#,java
+                    MyVariableName -> Pascal case -> Java,python,c#
+                    my_variable_name -> Snake Case -> php,java
+                    my-variable-name -> kebab case 
+                    MY_CONSTANT_NAME -> Screaming Snake case
+                    myvariablename -> Flat Case
+                 -->
+                <label for="nameId">Name</label>
+                <input id="nameId" type="text" name="name" placeholder="Enter your name" value="Dennis"><br><br>
+
+                <label for="emailId">Email</label>
+                <input id="emailId" type="email" name="myEmail" placeholder="Enter your Email" required><br><br>
+                
+                <label for="phoneId">Phone</label>
+                <input id="phoneId" type="number" name="MyPhone" placeholder="Enter your phone number"><br><br>
+                
+                <label for="passwordId">Password</label>
+                <input id="passwordId" type="password" name="password" placeholder="Enter you Desired password"><br><br>
+
+                <label for="confirmPasswordId">Confirm Password</label>
+                <input id="confirmPasswordId" type="password" name="confirm_password" placeholder="Confirm your password"><br><br>
+                <input type="hidden" name="USER_ID" >
+
+                <label>Choose Your Gender</label><br>
+                <label for="genderMale">Male</label>
+                <input type="radio" name="gender" value="male" id="genderMale">
+                <label for="genderFemale">Female</label>
+                <input type="radio" name="gender" value="female" id="genderFemale"><br><br>
+
+                <label>Enter your hobbies</label><br>
+                <label for="singingId">Signing</label>
+                <input type="checkbox" name="hobby" value="singing" id="singingId">
+                <label for="dancingId">Dancing</label>
+                <input type="checkbox" name="hobby" value="dancing" id="dancingId">
+                <label for="readingBooksId">Reading Books</label>
+                <input type="checkbox" name="hobby" value="readingbooks" id="readingBooksId">
+                <br><br>
+
+                <label for="courseId">Select your Course</label>
+                <select id="courseId" name="courses">
+                    <optgroup label="Sciences">
+                        <option value="btech">BTech</option>
+                        <option value="bsc">BSc</option>
+                        <option value="bca">BCA</option>
+                    </optgroup>
+                    <optgroup label="Commerce">
+                        <option value="bcom">BCom</option>
+                    </optgroup>
+                    <optgroup label="humanities">
+                        <option value="ba">BA</option>
+                        <option value="bvoc">BVoc</option>
+                    </optgroup>
+                </select><br><br>
+                <label for="subjectsId">Subjects</label>
+                <select id="subjectsId" name="Subjects" multiple>
+                    <option>Software Engineering</option>
+                    <option>Mathematics</option>
+                    <option>DBMS</option>
+                    <option>Data Structures</option>
+                    <option>Data Analytics</option>
+                </select><Br><br>
+                <label id="theme"></label>
+                <input type="color" id="theme" name="theme">
+                <br><br>
+                
+                <label for="dobId">Date  of Birth</label>
+                <input type="date" id="dobId" name="dob">
+                <br><br>
+                <input type="reset" value="Reset">
+                <!-- <input type="submit" value="Submit"> -->
+                <button type="button" id="submitBtn">Submit</button>
+            </form>
+        </center>
+    </body>
+</html>
+
+<!-- Recaptcha site key = 6Lek9GksAAAAAP7h_9sLfrm4qdcHoccNii6B7tMG-->
+ <!-- Recaptch Site Secret = 6Lek9GksAAAAABO1X11lvn8F4MVHYIgOFPaXMpDn -->

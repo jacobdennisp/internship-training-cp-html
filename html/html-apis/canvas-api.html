@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>HTML APIs | Canvas API | Campuspe </title>
+        
+    </head>
+    <body>
+        <h1>Canvas API</h1>
+        <p>Drawing shapes, Texts and Images on canvas</p>
+        <canvas id="myCanvas" width="600" height="400" style="border: 2px solid black;"></canvas>
+        
+        <script>
+            const canvas=document.getElementById('myCanvas');
+            const ctx = canvas.getContext('2d');
+
+            //Rectangle
+            ctx.fillStyle = 'blue';
+            ctx.fillRect (50,50,150,100)
+
+        </script>
+    </body>
+</html>
