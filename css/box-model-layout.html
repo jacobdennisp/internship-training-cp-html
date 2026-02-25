@@ -1,0 +1,108 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>Learn CSS | CSS Selectors</title>
+        <style>
+            .box{
+                /*Content - Width and Height*/
+                width: 300px;
+                height: 300px;
+                padding-top: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                border: 1px solid black;
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            .button{
+                width: auto;
+                height: 40px;
+                background-color: #F54927;
+                color: white;
+                text-align: center;
+                border: 1px solid #F54927;
+                       /*Top  left bot  right*/
+                padding: 12px 10px 12px 10px;
+                margin: 30px;
+                cursor: pointer;
+            }
+            .button:hover{
+                background-color: white;
+                color: #F54927;
+            }
+            .button:active{
+                background-color: #ED2700;
+                color: white;
+            }
+           
+            .button-outline{
+                width: auto;
+                height: 40px;
+                
+                       /*Top  left bot  right*/
+                padding: 12px 10px 12px 10px;
+                margin: 30px;
+                cursor: pointer;
+            }
+            .btn-color-2658ff{
+                background-color: white;
+                color: #2658FF;
+                text-align: center;
+                border: 1px solid #2658FF;
+            }
+            .btn-color-2658ff:hover{
+                background-color: #2658FF;
+                color: white;
+            }
+            .btn-color-2658ff:active{
+                background-color: #002AB8;
+                color: white;
+            }
+            .seperate-block{
+                display: block;
+            }
+            .inline-block{
+                display: inline;
+                width: 200px;
+                height: 300px;
+            }
+            .hide{
+                display: none;
+            }
+
+            .static{
+                position: static;
+            }
+            .relative{
+                position: relative;
+                top:10px;
+                left:145px;
+            }
+            .absolute{
+                position: absolute;
+                top: 10px;
+                left: 30px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <a href="index.html">Topic Home</a>
+        <div class="box inline-block static">My Box</div>
+        <div class="box inline-block relative">My Box</div>
+        <button class="button absolute">Hey Click Me</button>
+        <button class="button-outline btn-color-2658ff">Hey Click Me</button>
+        <span class="block">My Span 1</span>
+        <span class="block">My Span 2</span>
+    </body>
+</html>

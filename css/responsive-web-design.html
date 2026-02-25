@@ -1,0 +1,84 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>Learn CSS | CSS Selectors </title>
+        <style>
+            /* Mobile First Approach */
+            .container{
+                display: block;
+                height: 200px;
+                width: 300px;
+                background-color: red;
+                margin: 20px;
+            }
+            .container1{
+                display: block;
+                height: 200px;
+                width: 300px;
+                background-color: blue;
+                margin: 20px;
+            }
+
+            @media screen and (max-width:768px) {
+                .container{
+                    display: block;
+                    height: 150px;
+                    width: 200px;
+                    background-color: red;
+                    margin: 20px;
+                }
+                .container1{
+                    display: block;
+                    height: 150px;
+                    width: 200px;
+                    background-color: blue;
+                    margin: 20px;
+                }
+            }
+
+             @media screen and (max-width:480px) {
+                .container{
+                    display: block;
+                    height: 100px;
+                    width: 100px;
+                    background-color: red;
+                    margin: 20px;
+                }
+                .container1{
+                    display: block;
+                    height: 100px;
+                    width: 100px;
+                    background-color: blue;
+                    margin: 20px;
+                }
+            }
+
+            @media screen and (max-width:280px) {
+                .container{
+                    display: block;
+                    height: 50px;
+                    width: 100px;
+                    background-color: red;
+                    margin: 20px;
+                }
+                .container1{
+                    display: block;
+                    height: 50px;
+                    width: 100px;
+                    background-color: blue;
+                    margin: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <a href="index.html">Topic Home</a>
+        <div class="container"></div>
+        <div class="container1"></div>
+    </body>
+</html>
