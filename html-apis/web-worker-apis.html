@@ -1,0 +1,55 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>HTML APIs | Web Worker API | Campuspe </title>
+        
+    </head>
+    <body>
+        <h1>Web Work API</h1>
+        <p>Count numbers without freezing the page</p>
+        <button onclick="startWorker()">Start Worker</button>
+        <button onclick="topWorker()">Stop Worker</button>
+        
+        <p>Worker Count: <span id="result">0</span></p>
+        <p>Main Thread: <input type="text" placeholder="Type Here the page won't freeze"></p>
+
+        <script>
+            let worker;
+
+            function startWorker(){
+                if(typeof(Worker) !== "undefined"){
+                    if(!worker){
+                        const workerCode= `
+                            let count = 0;
+                            setInterval(function(){
+                                count++;
+                                postMessage(count);
+                            },1000);
+                        `;
+
+                        const blob = new Blob([workerCode] ,{ type : 'application/javascript'});
+                        worker = new Worker(URL.createObjectURL(blob));
+                        worker.onmessage=function(e){
+                            document.getElementById('result').textContent = e.data;
+                        };
+                    }
+                }else{
+                    alert("Web Workers not supported")
+                }
+            }
+
+            function stopWorker(){
+                if(worker){
+                    worker.terminate();
+                    worker= null;
+                }
+            }
+
+        </script>
+    </body>
+</html>
