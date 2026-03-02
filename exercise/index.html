@@ -45,22 +45,249 @@
                 box-shadow: 0 4px 6px rgba(0,0,0,0.1);
                 transition: transform 0.3s;
             }
+
+            .h2-custom{
+                color: #F54927;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            /* .card:hover{
+                transform: translateY(-5px);
+                box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            } */
+
+            .form-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .form-group{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .form-group.full-width{
+                grid-column: 1/-1;
+            }
+
+            label{
+                color: #333;
+                font-weight: bold;
+                margin-bottom: 8px;
+                font-size: 0.95rem;
+            }
+
+            input,
+            select,
+            textarea{
+                padding: 12px;
+                border: 2px solid #e0e0e0;
+                border-radius: 5px;
+                font-size: 1rem;
+                transition: border 0,3s;
+                font-family: Arial;
+            }
+
+            input:focus,
+            select:focus,
+            textarea:focus{
+                outline: none;
+                border-color: #667eaa;
+            }
+
+            textarea{
+                resize: vertical;
+                min-height: 100px;
+            }
+
+            .checkbox-group,
+            .radio-group{
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .checkbox-item,
+            .radio-item{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            input[type="checkbox"]{
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+            }
+
+            .btn-group{
+                display: flex;
+                gap: 15px;
+                margin-top: 20px;
+            }
+
+            button{
+                padding: 12px 30px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                transform: all 0.3s;
+                font-weight: bold;
+            }
+
+            .btn-primary{
+                background: #F54927;
+                color: #fff;
+            }
+
+            .btn-primary:hover{ 
+                background: #F44927;
+                transform: translateY(-2px);
+            }
+
+            .btn-secondary{
+                background: #e0e0e0;
+                color: #333;
+            }
+
+            .btn-secondary:hover{
+                background: #d0d0d0;
+            }
+
+
+            @media (max-width:780px){
+                
+                h1{
+                    font-size: 1.5rem;
+                }
+
+                .form-grid{
+                    grid-template-columns: 1fr;
+                }
+
+                .card{
+                    min-width: 100%;
+                }
+                
+                .btn-group{
+                    flex-direction: column;
+                }
+
+                button{
+                    width: 100%;
+                }
+            }
+
+            @media (max-width:480px) {
+                body{
+                    padding: 10px;
+                }
+
+                .card{
+                    padding: 20px;
+                }
+            }
+                
+            
         </style>
     </head>
     <body>
         <a href="../index.html">Topic Home</a>
         <div class="container">
-            <h1>Application for Submission</h1>
-            <div class="card-grid">
-                <div class="card">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa molestiae minima vitae in, illo reiciendis dolore pariatur dicta ipsam rem non fugit necessitatibus quis eligendi expedita. Cum, quos fugit.</p>
-
-                </div>
-                <div class="card">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsa molestiae minima vitae in, illo reiciendis dolore pariatur dicta ipsam rem non fugit necessitatibus quis eligendi expedita. Cum, quos fugit.</p>
-                </div>
+            
+            <div class="card">
+                <form  id="myForm">
+                    <h2 class="h2-custom">Submission Form </h2>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="first_name" placeholder="Enter your First name" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="last_name" placeholder="Enter your Last name" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailId">Email *</label>
+                            <input type="email" id="emailId" name="email" placeholder="you@email.com" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">PHone Number</label>
+                            <input type="tel" id="phoneNumber" name="phone_number" placeholder="+91 98765 98765" />
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth </label>
+                            <input type="date" id="dob" name="dob"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Select Your Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">Choose a Course</option>
+                                <option value="cybersecurity">Cybersecrutiy</option>
+                                <option value="fullstack">Full Stack Devleopment</option>
+                                <option value="genai">Generative AI</option>
+                                <option value="devops">DevOps</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <div class="radio-item">
+                                    <input type="radio" id="male" name="gender" value="male"/>
+                                    <label for="male">Male</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="female" name="gender" value="female"/>
+                                    <label for="female">Female</label>
+                                </div>
+                                <div class="radio-item">
+                                    <input type="radio" id="other" name="gender" value="other"/>
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Interests</label>
+                            <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="web" name="Interests" value="web"/>
+                                    <label for="web">Web Development</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="cybersec" name="Interests" value="cybersec"/>
+                                    <label for="cybersec">Cyber Security</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="ai-ml" name="Interests" value="ai"/>
+                                    <label for="ai-ml">Generative AI</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="mobile" name="Interests" value="mobile"/>
+                                    <label for="mobile">Mobile Development</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Additional Comments</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your goals..."></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <div class="checkbox-item">
+                                <input type="checkbox" id="terms" name="terms" required><label for="terms">I agree to the Terms and conditions</label>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="submit" class="btn-primary">
+                                Submit Application
+                            </button>
+                            <button type="reset" class="btn-secondary">Clear Form</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-            
     </body>
 </html>
