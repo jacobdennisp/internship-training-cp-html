@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color:#f0f0f0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+h1{
+    color: #F54927;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.card-grid{
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.card{
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    flex:1;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.h2-custom{
+    color: #F54927;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+} */
+
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width{
+    grid-column: 1/-1;
+}
+
+label{
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+input,
+select,
+textarea{
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0,3s;
+    font-family: Arial;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border-color: #667eaa;
+}
+
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkbox-group,
+.radio-group{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.checkbox-item,
+.radio-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.btn-group{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button{
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transform: all 0.3s;
+    font-weight: bold;
+}
+
+.btn-primary{
+    background: #F54927;
+    color: #fff;
+}
+
+.btn-primary:hover{ 
+    background: #F44927;
+    transform: translateY(-2px);
+}
+
+.btn-secondary{
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btn-secondary:hover{
+    background: #d0d0d0;
+}
+
+b{
+    display: block;
+}
+@media (max-width:780px){
+    
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .form-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        min-width: 100%;
+    }
+    
+    .btn-group{
+        flex-direction: column;
+    }
+
+    button{
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    body{
+        padding: 10px;
+    }
+
+    .card{
+        padding: 20px;
+    }
+}
+.table-container{
+    overflow-x: auto;
+    margin:20px 0;
+}
+
+.table-striped{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-striped th,
+.table-striped td{
+    padding: 15px;
+    text-align: left;
+}
+
+.table-striped th{
+    background-color: #F44927;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.table-striped tbody tr:nth-child(odd){
+    background-color: #F44212;
+}
+
+.table-striped tbody tr:hover{
+    background-color: #F54927;
+}

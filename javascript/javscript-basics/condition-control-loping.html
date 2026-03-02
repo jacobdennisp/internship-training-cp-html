@@ -1,0 +1,80 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>Learn Javascript | Introduction To Javascript | Campuspe </title>
+        <link src="style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <a href="index.html">Topic Home</a><br>
+        <script>
+            //1.Conditional and Control
+            //if statement
+            let age=10;
+            if(age>=18){
+                console.log("You are an adult");
+            }
+            //if-else statement
+            let temperature = 25;
+            if(temperature > 30){
+                console.log("It's hot!")
+            }else{
+                console.log("It's cold!")
+            }
+            //if-else-if statment
+            let score = 85;
+            if(score >=90){
+                console.log("Grade A");
+            }else if(score >= 80){
+                console.log("Grade B");                
+            }else if(score >= 70){
+                console.log("Grade C");                
+            }else if(score >= 60){
+                console.log("Grade D");                
+            }else{
+                console.log("Grade F")
+            }
+            //switch statment
+            let day = 'Monday';
+            switch(day){
+                case 'Monday' : console.log("Start of the Work Week");
+                                break;
+                case 'Friday' : console.log("Almost Weekend");
+                                break;
+                case 'Saturday' :
+                case 'Sunday' : console.log("Weekend");
+                                break;
+                default: console.log("Mid week day")
+
+            }
+            //ternary operator
+            let status = age >= 18 ? 'Adult' : 'Minor' ;
+
+            //2.Loop
+            //For Loop
+            for(let i=1;i<5;i++){
+                console.log(i)
+            }
+            //While Loop
+            let count =1;
+            while(count <=5 ){
+                console.log(count);
+                count++;
+            }
+            //Do Whiel Loop
+            let numb =10;
+            do{
+                console.log(numb);
+                numb++
+            }while(numb<=5)
+            //For..of Loop
+            //For..in Loop
+            //Break and Continue
+        </script>
+    </body>
+</html>

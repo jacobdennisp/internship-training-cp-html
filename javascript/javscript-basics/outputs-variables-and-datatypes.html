@@ -1,0 +1,97 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>Learn Javascript | Introduction To Javascript | Campuspe </title>
+        <link src="style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <a href="index.html">Topic Home</a><br>
+        <!-- <div id="testIdElement"></div>
+        <input type="text" class="form-control" id="inputItem"> -->
+        <script>
+            console.log(123)
+            console.warn("this is a warning")
+            console.info("This is a info")
+            console.error("This is custom error printed by me")
+            alert("This is a alert message")
+            prompt("This is a prompt message")
+            document.write("this is my document item tha i just injected inside")
+            document.getElementById("testIdElement").innerHTML = "This is injected innerhtml"
+            document.getElementById("inputItem").value = "This is injected Value"
+
+            var name="Dennis"
+
+            let age=24;
+            age=25;
+
+            const  PI = 3.14285
+
+
+            //Datatypes
+            //1 String
+            let firstname="Dennis"
+            let lastname='P'
+            let fullname = `${firstname} ${lastname}`;
+            let message = 'He said "Hello!"';
+
+            // console.log(fullname.length)
+            // console.log(fullname.toUpperCase())
+            // console.log(fullname.toLowerCase())
+            // console.log(fullname.substring(0,6))
+
+            //2 Number
+            let integer = 42;
+            let decimal = 3.14;
+            let negative = -10;
+
+            // console.log(Math.round(4.7))
+            // console.log(Math.floor(4.7))
+            // console.log(Math.ceil(4.1))
+            // console.log(Math.random());
+
+
+            //3 Boolean
+            let isStudent = true;
+            let hasJob = false;
+
+            //4 let notAssigned
+            let notAssigned;
+            //console.log(notAssigned)
+
+            //5 null
+            let emptyValue = null;
+            //console.log(emptyValue)
+
+            //6 Array
+            let fruits = ['Apple','Banana','Orange']
+            let number = [1,2,3,4,5,6,7]
+            let mixed = [1,'Hello',true,null];
+
+            // console.log(fruits.length)
+            // console.log(fruits.push("mango"))
+            // console.log(fruits)
+            // console.log(fruits.pop())
+            // console.log(fruits)
+            // console.log(fruits.unshift("grapes"))
+            // console.log(fruits)
+            // console.log(fruits.shift())
+            // console.log(fruits)
+            
+            //7 Objects
+            let student = {
+                name: "Dennis",
+                mobile: 8090912345,
+                age:30,
+                isMarried:false,
+                hasKids:null,
+            }
+            console.log( student['name'])
+
+        </script>
+    </body>
+</html>
