@@ -4,18 +4,23 @@ import Test from './Component/Test';
 import User from './Component/User';
 import Greetings from './Component/Greetings';
 import UserList from './Component/UserList';
+import Counter from './Component/Hooks';
+import Form from './Component/Form';
+function Alert({message,type}){
+    return(
+        <div className={`alert ${type}`}>
+            {message}
+        </div>
+    )
+}
+
 function App() {
-
-  const users = [
-    { id:1, name: 'Jacob Dennis', age: 25 },
-    { id:2, name: 'Jane Doe', age: 30 },
-    { id:3, name: 'John Smith', age: 28 }
-  ]
-
   return (
     <>
-      <UserList users={users} />
-      
+      {/* <Alert message="This is an error message" type="error"/>
+      <Alert message="This is a success message" type="success"/>    
+      <Counter/> */}
+      <Form/>
     </>
   );
 }
