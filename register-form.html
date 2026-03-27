@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 320px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #1a5ed9;
+}
+
+.links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+
+<script>
+function showSuccess(event) {
+    event.preventDefault();
+    alert("Registration Successful!");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+<h2>CREATE ACCOUNT</h2>
+
+<form onsubmit="showSuccess(event)">
+
+<label>Full Name</label> <input type="text" required>
+
+<label>Email</label> <input type="email" required>
+
+<label>Password</label> <input type="password" required>
+
+<input type="submit" value="Register">
+
+</form>
+
+<div class="links">
+Already have an account?
+<a href="login-form.html">Login</a>
+</div>
+
+</div>
+
+</body>
+</html>
