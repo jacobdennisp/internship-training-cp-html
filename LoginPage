@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+    <center>
+        <h1>Login Page</h1>
+
+        <form>
+            <label for="email">Gmail ID</label>
+            <input type="email" id="email" required placeholder="Enter your Gmail ID">
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="Enter your Password">
+            <br><br>
+
+            <input type="submit" value="Login">
+            <br><br>
+
+            <a href="forgotpass.html">Forgot Password?</a>
+        </form>
+    </center>
+</body>
+</html>
